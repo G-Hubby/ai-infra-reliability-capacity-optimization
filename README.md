@@ -23,7 +23,7 @@ The platform spans a four-tier architecture: telemetry ingestion, ML pipeline, a
 | **Agentic Workflow** | NL Query Interface → Model Router → Inference Engine → Policy Engine → Action Executor |
 | **Infrastructure** | Spectrum-X Fabric · 100G / 200G / 400G switches · Training Pods A–D |
 
-![System Architecture](figures/system-architecture.png)
+![System Architecture](figures/system-architecture.svg)
 
 ---
 
@@ -85,7 +85,7 @@ The AI Assistant provides a closed-loop, natural-language interface for infrastr
 4. **Policy Engine** — validates recommended actions against operational constraints
 5. **Action Executor** — dispatches approved mitigations to the fabric control plane
 
-![AI Assistant Architecture](figures/ai-assistant-architecture.png)
+![AI Assistant Architecture](figures/ai-assistant-architecture.svg)
 
 ---
 
