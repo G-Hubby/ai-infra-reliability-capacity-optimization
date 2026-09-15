@@ -23,7 +23,9 @@ The platform spans a four-tier architecture: telemetry ingestion, ML pipeline, a
 | **Agentic Workflow** | NL Query Interface → Model Router → Inference Engine → Policy Engine → Action Executor |
 | **Infrastructure** | Spectrum-X Fabric · 100G / 200G / 400G switches · Training Pods A–D |
 
-![System Architecture](figures/system-architecture.svg)
+### AI Assistant Architecture
+![AI Assistant Architecture](diagrams/ai-assistant-architecture.svg)
+
 
 ---
 
