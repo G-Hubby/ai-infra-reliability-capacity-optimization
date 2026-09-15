@@ -1,0 +1,77 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+dist/
+build/
+wheels/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Generated data (run synthetic_telemetry_generator.py to recreate)
+data/*.csv
+data/*.parquet
+data/*.json
+data/*.feather
+
+# Saved model artifacts (run model_training.py to recreate)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.onnx
+
+# Evaluation outputs
+outputs/
+plots/
+*.png
+*.pdf
+!report/*.pdf
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+.project
+.classpath
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Logs
+*.log
+logs/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
