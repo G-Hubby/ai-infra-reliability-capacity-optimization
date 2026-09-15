@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="640" fill="#f8f9fa" rx="8"/>
+  <text x="450" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">AI Infrastructure Reliability &amp; Capacity Optimization — System Architecture</text>
+  <text x="450" y="52" text-anchor="middle" font-size="11" fill="#6c757d">Figure 0.2 · CSE599 Capstone · CSTU · Subhashish Mitra · August 2026</text>
+
+  <!-- TIER 4 — AI Assistant + Mitigation (Purple) -->
+  <rect x="30" y="70" width="840" height="120" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="48" y="92" font-size="12" font-weight="bold" fill="#5b21b6">Tier 4 — AI Assistant + Mitigation</text>
+  <!-- Components -->
+  <rect x="50" y="100" width="120" height="48" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="110" y="120" text-anchor="middle" font-size="10" fill="white" font-weight="bold">NL Query</text>
+  <text x="110" y="134" text-anchor="middle" font-size="10" fill="white">Interface</text>
+
+  <rect x="200" y="100" width="120" height="48" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="260" y="120" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Model Router</text>
+  <text x="260" y="134" text-anchor="middle" font-size="10" fill="#e9d5ff">Query Classifier</text>
+
+  <rect x="350" y="100" width="120" height="48" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="410" y="120" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Inference</text>
+  <text x="410" y="134" text-anchor="middle" font-size="10" fill="white">Engine</text>
+
+  <rect x="500" y="100" width="120" height="48" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="560" y="120" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Policy Engine</text>
+  <text x="560" y="134" text-anchor="middle" font-size="10" fill="#e9d5ff">Mitigation Rank</text>
+
+  <!-- HITL Gate — RED -->
+  <rect x="650" y="97" width="100" height="54" rx="6" fill="#dc2626" stroke="#991b1b" stroke-width="2.5"/>
+  <text x="700" y="117" text-anchor="middle" font-size="10" fill="white" font-weight="bold">✅ HITL</text>
+  <text x="700" y="130" text-anchor="middle" font-size="9" fill="white">Approval Gate</text>
+  <text x="700" y="143" text-anchor="middle" font-size="8" fill="#fecaca">Non-Waivable</text>
+
+  <rect x="775" y="100" width="80" height="48" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="1.5"/>
+  <text x="815" y="120" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Action</text>
+  <text x="815" y="134" text-anchor="middle" font-size="10" fill="white">Executor</text>
+
+  <!-- Arrows Tier 4 -->
+  <line x1="170" y1="124" x2="198" y2="124" stroke="#5b21b6" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="320" y1="124" x2="348" y2="124" stroke="#5b21b6" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="470" y1="124" x2="498" y2="124" stroke="#5b21b6" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="620" y1="124" x2="648" y2="124" stroke="#5b21b6" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="750" y1="124" x2="773" y2="124" stroke="#5b21b6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- TIER 3 — Data Processing & ML (Green) -->
+  <rect x="30" y="210" width="840" height="130" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="48" y="232" font-size="12" font-weight="bold" fill="#065f46">Tier 3 — Data Processing &amp; ML Pipeline</text>
+
+  <rect x="50" y="242" width="180" height="80" rx="6" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+  <text x="140" y="262" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Feature Engineering</text>
+  <text x="140" y="276" text-anchor="middle" font-size="9" fill="#d1fae5">reliability · capacity</text>
+  <text x="140" y="288" text-anchor="middle" font-size="9" fill="#d1fae5">temporal · TF-IDF</text>
+  <text x="140" y="300" text-anchor="middle" font-size="9" fill="#d1fae5">composite · PCPS-grounded</text>
+
+  <rect x="260" y="242" width="180" height="80" rx="6" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+  <text x="350" y="262" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Model Training</text>
+  <text x="350" y="278" text-anchor="middle" font-size="9" fill="#d1fae5">CHF · SDP · TEE · CLS</text>
+  <text x="350" y="292" text-anchor="middle" font-size="9" fill="#d1fae5">GBR-XGB + HGB-LGB</text>
+  <text x="350" y="306" text-anchor="middle" font-size="9" fill="#d1fae5">5-fold CV · seed=42</text>
+
+  <rect x="470" y="242" width="180" height="80" rx="6" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+  <text x="560" y="262" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Evaluation</text>
+  <text x="560" y="278" text-anchor="middle" font-size="9" fill="#d1fae5">CV R² · F1 · RMSE</text>
+  <text x="560" y="292" text-anchor="middle" font-size="9" fill="#d1fae5">SHAP Attribution</text>
+  <text x="560" y="306" text-anchor="middle" font-size="9" fill="#d1fae5">Bias Audit · PSI Drift</text>
+
+  <rect x="680" y="242" width="170" height="80" rx="6" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+  <text x="765" y="262" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Operationalization</text>
+  <text x="765" y="278" text-anchor="middle" font-size="9" fill="#d1fae5">PSI trigger &gt; 0.20</text>
+  <text x="765" y="292" text-anchor="middle" font-size="9" fill="#d1fae5">CHF/TEE quarterly</text>
+  <text x="765" y="306" text-anchor="middle" font-size="9" fill="#d1fae5">SDP monthly · CLS 6-mo</text>
+
+  <!-- Arrows Tier 3 -->
+  <line x1="230" y1="282" x2="258" y2="282" stroke="#047857" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <line x1="440" y1="282" x2="468" y2="282" stroke="#047857" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <line x1="650" y1="282" x2="678" y2="282" stroke="#047857" stroke-width="1.5" marker-end="url(#arrG)"/>
+
+  <!-- TIER 2 — Telemetry (Amber) -->
+  <rect x="30" y="360" width="840" height="120" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="48" y="382" font-size="12" font-weight="bold" fill="#92400e">Tier 2 — Telemetry &amp; Observability</text>
+
+  <rect x="50" y="392" width="370" height="68" rx="6" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+  <text x="235" y="413" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Fabric360</text>
+  <text x="235" y="428" text-anchor="middle" font-size="9" fill="#fef3c7">Error Counters · Congestion Metrics · Buffer Pressure</text>
+  <text x="235" y="442" text-anchor="middle" font-size="9" fill="#fef3c7">Link Health via gNMI @ 30 s polling interval</text>
+
+  <rect x="450" y="392" width="400" height="68" rx="6" fill="#d97706" stroke="#b45309" stroke-width="1.5"/>
+  <text x="650" y="413" text-anchor="middle" font-size="10" fill="white" font-weight="bold">FlowQ</text>
+  <text x="650" y="428" text-anchor="middle" font-size="9" fill="#fef3c7">Topology Graph · Event Logs · Link Flaps</text>
+  <text x="650" y="442" text-anchor="middle" font-size="9" fill="#fef3c7">BGP Resets · State Change Tracking</text>
+
+  <!-- TIER 1 — Infrastructure (Blue) -->
+  <rect x="30" y="500" width="840" height="110" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="48" y="522" font-size="12" font-weight="bold" fill="#1e40af">Tier 1 — Infrastructure (NVIDIA Spectrum-X)</text>
+
+  <rect x="50" y="532" width="200" height="62" rx="6" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="150" y="552" text-anchor="middle" font-size="10" fill="white" font-weight="bold">SN5600 Switch Fabric</text>
+  <text x="150" y="566" text-anchor="middle" font-size="9" fill="#bfdbfe">51.2 Tb/s · 512×100GbE</text>
+  <text x="150" y="580" text-anchor="middle" font-size="9" fill="#bfdbfe">400GbE ISLs · RoCEv2</text>
+
+  <rect x="280" y="532" width="200" height="62" rx="6" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="380" y="552" text-anchor="middle" font-size="10" fill="white" font-weight="bold">GPU Pod Cluster</text>
+  <text x="380" y="566" text-anchor="middle" font-size="9" fill="#bfdbfe">8 pods × 64 GPUs</text>
+  <text x="380" y="580" text-anchor="middle" font-size="9" fill="#bfdbfe">Dual-homed LACP</text>
+
+  <rect x="510" y="532" width="200" height="62" rx="6" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="610" y="552" text-anchor="middle" font-size="10" fill="white" font-weight="bold">DCQCN Congestion</text>
+  <text x="610" y="566" text-anchor="middle" font-size="9" fill="#bfdbfe">ECN Marking · PFC</text>
+  <text x="610" y="580" text-anchor="middle" font-size="9" fill="#bfdbfe">Dynamic QoS</text>
+
+  <rect x="740" y="532" width="110" height="62" rx="6" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="795" y="552" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Regions</text>
+  <text x="795" y="566" text-anchor="middle" font-size="9" fill="#bfdbfe">NA · EU</text>
+  <text x="795" y="580" text-anchor="middle" font-size="9" fill="#bfdbfe">APAC · LATAM</text>
+
+  <!-- Vertical arrows between tiers -->
+  <line x1="450" y1="196" x2="450" y2="210" stroke="#7c3aed" stroke-width="2" marker-end="url(#arrUp)"/>
+  <line x1="450" y1="348" x2="450" y2="360" stroke="#059669" stroke-width="2" marker-end="url(#arrUp)"/>
+  <line x1="450" y1="488" x2="450" y2="500" stroke="#d97706" stroke-width="2" marker-end="url(#arrUp)"/>
+
+  <!-- Tier labels on right -->
+  <text x="878" y="136" text-anchor="middle" font-size="9" fill="#5b21b6" transform="rotate(90,878,136)">TIER 4</text>
+  <text x="878" y="278" text-anchor="middle" font-size="9" fill="#047857" transform="rotate(90,878,278)">TIER 3</text>
+  <text x="878" y="422" text-anchor="middle" font-size="9" fill="#92400e" transform="rotate(90,878,422)">TIER 2</text>
+  <text x="878" y="558" text-anchor="middle" font-size="9" fill="#1e40af" transform="rotate(90,878,558)">TIER 1</text>
+
+  <!-- Feedback arc -->
+  <path d="M 855 510 Q 880 400 855 210" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrR)"/>
+  <text x="892" y="360" font-size="9" fill="#dc2626" transform="rotate(90,892,360)">closed-loop feedback</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#5b21b6"/>
+    </marker>
+    <marker id="arrG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#047857"/>
+    </marker>
+    <marker id="arrUp" markerWidth="8" markerHeight="8" refX="3" refY="6" orient="auto">
+      <path d="M0,6 L6,6 L3,0 z" fill="#374151"/>
+    </marker>
+    <marker id="arrR" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+</svg>
