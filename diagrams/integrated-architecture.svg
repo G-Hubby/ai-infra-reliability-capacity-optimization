@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="960" height="580" fill="#f8f9fa" rx="8"/>
+  <text x="480" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a2e">Integrated Architecture — 5-Stage Closed-Loop Pipeline</text>
+  <text x="480" y="46" text-anchor="middle" font-size="11" fill="#6c757d">Figure 0.1 · CSE599 Capstone · CSTU · Subhashish Mitra · August 2026</text>
+
+  <!-- Stage headers -->
+  <!-- Stage 1: Telemetry Layer -->
+  <rect x="20" y="62" width="168" height="440" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <rect x="20" y="62" width="168" height="38" rx="8" fill="#d97706"/>
+  <rect x="20" y="92" width="168" height="8" fill="#d97706"/>
+  <text x="104" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Telemetry Layer</text>
+
+  <!-- Telemetry boxes -->
+  <rect x="34" y="114" width="140" height="54" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="104" y="134" text-anchor="middle" font-size="10" font-weight="bold" fill="#78350f">Fabric360</text>
+  <text x="104" y="148" text-anchor="middle" font-size="8.5" fill="#92400e">gNMI @ 30 s polling</text>
+  <text x="104" y="160" text-anchor="middle" font-size="8.5" fill="#92400e">Error · Congestion · Buffer</text>
+
+  <rect x="34" y="180" width="140" height="54" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="104" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="#78350f">FlowQ</text>
+  <text x="104" y="214" text-anchor="middle" font-size="8.5" fill="#92400e">Topology Graph · Logs</text>
+  <text x="104" y="226" text-anchor="middle" font-size="8.5" fill="#92400e">Link Flaps · BGP Resets</text>
+
+  <rect x="34" y="246" width="140" height="54" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="104" y="266" text-anchor="middle" font-size="10" font-weight="bold" fill="#78350f">Spectrum-X SN5600</text>
+  <text x="104" y="280" text-anchor="middle" font-size="8.5" fill="#92400e">51.2 Tb/s · 512×100GbE</text>
+  <text x="104" y="292" text-anchor="middle" font-size="8.5" fill="#92400e">8 pods × 64 GPUs</text>
+
+  <rect x="34" y="312" width="140" height="54" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="104" y="332" text-anchor="middle" font-size="10" font-weight="bold" fill="#78350f">PCPS Corpus</text>
+  <text x="104" y="346" text-anchor="middle" font-size="8.5" fill="#92400e">3,000 rows · seed=42</text>
+  <text x="104" y="358" text-anchor="middle" font-size="8.5" fill="#92400e">MDR · Supply · Task</text>
+
+  <rect x="34" y="378" width="140" height="54" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="104" y="398" text-anchor="middle" font-size="10" font-weight="bold" fill="#78350f">RoCEv2 + DCQCN</text>
+  <text x="104" y="412" text-anchor="middle" font-size="8.5" fill="#92400e">ECN · PFC · QoS</text>
+  <text x="104" y="424" text-anchor="middle" font-size="8.5" fill="#92400e">Congestion Control</text>
+
+  <!-- Stage 2: ML Pipeline -->
+  <rect x="204" y="62" width="168" height="440" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <rect x="204" y="62" width="168" height="38" rx="8" fill="#059669"/>
+  <rect x="204" y="92" width="168" height="8" fill="#059669"/>
+  <text x="288" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="white">ML Pipeline</text>
+
+  <rect x="218" y="114" width="140" height="54" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <text x="288" y="134" text-anchor="middle" font-size="10" font-weight="bold" fill="#064e3b">Feature Eng.</text>
+  <text x="288" y="148" text-anchor="middle" font-size="8.5" fill="#065f46">PCPS-grounded schema</text>
+  <text x="288" y="160" text-anchor="middle" font-size="8.5" fill="#065f46">lag · temporal · composite</text>
+
+  <rect x="218" y="180" width="140" height="54" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <text x="288" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="#064e3b">CHF  R²=0.815</text>
+  <text x="288" y="214" text-anchor="middle" font-size="8.5" fill="#065f46">Capacity Headroom</text>
+  <text x="288" y="226" text-anchor="middle" font-size="8.5" fill="#065f46">HGB-LGB · ✅ Target Met</text>
+
+  <rect x="218" y="246" width="140" height="54" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <text x="288" y="266" text-anchor="middle" font-size="10" font-weight="bold" fill="#064e3b">SDP  R²=0.736</text>
+  <text x="288" y="280" text-anchor="middle" font-size="8.5" fill="#065f46">Supply Delay Predictor</text>
+  <text x="288" y="292" text-anchor="middle" font-size="8.5" fill="#065f46">GBR-XGB · ⚠ 1.9pp gap</text>
+
+  <rect x="218" y="312" width="140" height="54" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <text x="288" y="332" text-anchor="middle" font-size="10" font-weight="bold" fill="#064e3b">CLS  F1=0.427</text>
+  <text x="288" y="346" text-anchor="middle" font-size="8.5" fill="#065f46">Topology Classifier</text>
+  <text x="288" y="358" text-anchor="middle" font-size="8.5" fill="#065f46">HGB-LGB · ⚠ Recall gap</text>
+
+  <rect x="218" y="378" width="140" height="54" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.2"/>
+  <text x="288" y="398" text-anchor="middle" font-size="10" font-weight="bold" fill="#064e3b">TEE  R²=0.003</text>
+  <text x="288" y="412" text-anchor="middle" font-size="8.5" fill="#065f46">Task Effort Estimator</text>
+  <text x="288" y="424" text-anchor="middle" font-size="8.5" fill="#065f46">HGB-LGB · signal-limited</text>
+
+  <!-- Stage 3: Agentic Workflow -->
+  <rect x="388" y="62" width="184" height="440" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="388" y="62" width="184" height="38" rx="8" fill="#7c3aed"/>
+  <rect x="388" y="92" width="184" height="8" fill="#7c3aed"/>
+  <text x="480" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Agentic Workflow</text>
+
+  <rect x="402" y="114" width="156" height="46" rx="5" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="480" y="133" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">① Detect</text>
+  <text x="480" y="150" text-anchor="middle" font-size="8.5" fill="#5b21b6">Fabric360/FlowQ anomaly signal</text>
+
+  <rect x="402" y="172" width="156" height="46" rx="5" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="480" y="191" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">② Predict</text>
+  <text x="480" y="208" text-anchor="middle" font-size="8.5" fill="#5b21b6">ML ensemble + SHAP scores</text>
+
+  <rect x="402" y="230" width="156" height="46" rx="5" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="480" y="249" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">③ Recommend</text>
+  <text x="480" y="266" text-anchor="middle" font-size="8.5" fill="#5b21b6">Policy Engine · ranked actions</text>
+
+  <!-- HITL box -->
+  <rect x="402" y="288" width="156" height="56" rx="5" fill="#dc2626" stroke="#7f1d1d" stroke-width="2.5"/>
+  <text x="480" y="308" text-anchor="middle" font-size="10" font-weight="bold" fill="white">④ HITL APPROVE</text>
+  <text x="480" y="323" text-anchor="middle" font-size="8.5" fill="#fecaca">Mandatory · Non-Waivable</text>
+  <text x="480" y="337" text-anchor="middle" font-size="8.5" fill="#fca5a5">55 s operator window</text>
+
+  <rect x="402" y="356" width="156" height="46" rx="5" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="480" y="375" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">⑤ Execute</text>
+  <text x="480" y="392" text-anchor="middle" font-size="8.5" fill="#5b21b6">Action Executor → fabric CP</text>
+
+  <rect x="402" y="414" width="156" height="54" rx="5" fill="#e9d5ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="480" y="434" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">Latency Budget</text>
+  <text x="480" y="449" text-anchor="middle" font-size="8.5" fill="#5b21b6">30+20+15+55 = ≤120 s</text>
+  <text x="480" y="463" text-anchor="middle" font-size="8.5" fill="#5b21b6">Inference &lt;10 ms CPU</text>
+
+  <!-- Stage 4: Spectrum-X Fabric -->
+  <rect x="588" y="62" width="168" height="440" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <rect x="588" y="62" width="168" height="38" rx="8" fill="#2563eb"/>
+  <rect x="588" y="92" width="168" height="8" fill="#2563eb"/>
+  <text x="672" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Spectrum-X Fabric</text>
+
+  <rect x="602" y="114" width="140" height="54" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="672" y="134" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">Branch 0 — 68%</text>
+  <text x="672" y="148" text-anchor="middle" font-size="8.5" fill="#1e40af">Standard Ethernet</text>
+  <text x="672" y="160" text-anchor="middle" font-size="8.5" fill="#1e40af">OCS prob: 0.12 · Monitor</text>
+
+  <rect x="602" y="180" width="140" height="54" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="672" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">Branch 1 — 16%</text>
+  <text x="672" y="214" text-anchor="middle" font-size="8.5" fill="#1e40af">OCS Topology</text>
+  <text x="672" y="226" text-anchor="middle" font-size="8.5" fill="#1e40af">OCS prob: 0.61 · Assess</text>
+
+  <rect x="602" y="246" width="140" height="54" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="672" y="266" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">Branch 2 — 12%</text>
+  <text x="672" y="280" text-anchor="middle" font-size="8.5" fill="#1e40af">Expander Topology</text>
+  <text x="672" y="292" text-anchor="middle" font-size="8.5" fill="#1e40af">OCS prob: 0.74 · In Scope</text>
+
+  <rect x="602" y="312" width="140" height="54" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="672" y="332" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">Branch 3 — 4%</text>
+  <text x="672" y="346" text-anchor="middle" font-size="8.5" fill="#1e40af">Scale-Across</text>
+  <text x="672" y="358" text-anchor="middle" font-size="8.5" fill="#1e40af">OCS prob: 0.88 · Immediate</text>
+
+  <rect x="602" y="378" width="140" height="54" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="672" y="398" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a8a">Regions</text>
+  <text x="672" y="412" text-anchor="middle" font-size="8.5" fill="#1e40af">NA · EU · APAC · LATAM</text>
+  <text x="672" y="424" text-anchor="middle" font-size="8.5" fill="#1e40af">Region→DC→Suite→Owner</text>
+
+  <!-- Stage 5: Feedback Loop -->
+  <rect x="772" y="62" width="168" height="440" rx="8" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+  <rect x="772" y="62" width="168" height="38" rx="8" fill="#db2777"/>
+  <rect x="772" y="92" width="168" height="8" fill="#db2777"/>
+  <text x="856" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Feedback Loop</text>
+
+  <rect x="786" y="114" width="140" height="54" rx="5" fill="#fce7f3" stroke="#db2777" stroke-width="1.2"/>
+  <text x="856" y="134" text-anchor="middle" font-size="10" font-weight="bold" fill="#831843">PSI Drift Monitor</text>
+  <text x="856" y="148" text-anchor="middle" font-size="8.5" fill="#9d174d">Trigger: PSI &gt; 0.20</text>
+  <text x="856" y="160" text-anchor="middle" font-size="8.5" fill="#9d174d">All 4 models · auto-alert</text>
+
+  <rect x="786" y="180" width="140" height="54" rx="5" fill="#fce7f3" stroke="#db2777" stroke-width="1.2"/>
+  <text x="856" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="#831843">CHF Refresh</text>
+  <text x="856" y="214" text-anchor="middle" font-size="8.5" fill="#9d174d">Quarterly cadence</text>
+  <text x="856" y="226" text-anchor="middle" font-size="8.5" fill="#9d174d">EU R² gap remediation</text>
+
+  <rect x="786" y="246" width="140" height="54" rx="5" fill="#fce7f3" stroke="#db2777" stroke-width="1.2"/>
+  <text x="856" y="266" text-anchor="middle" font-size="10" font-weight="bold" fill="#831843">SDP Refresh</text>
+  <text x="856" y="280" text-anchor="middle" font-size="8.5" fill="#9d174d">Monthly cadence</text>
+  <text x="856" y="292" text-anchor="middle" font-size="8.5" fill="#9d174d">Lead-time signal expansion</text>
+
+  <rect x="786" y="312" width="140" height="54" rx="5" fill="#fce7f3" stroke="#db2777" stroke-width="1.2"/>
+  <text x="856" y="332" text-anchor="middle" font-size="10" font-weight="bold" fill="#831843">CLS Refresh</text>
+  <text x="856" y="346" text-anchor="middle" font-size="8.5" fill="#9d174d">Semi-annual cadence</text>
+  <text x="856" y="358" text-anchor="middle" font-size="8.5" fill="#9d174d">Decom recall calibration</text>
+
+  <rect x="786" y="378" width="140" height="54" rx="5" fill="#fce7f3" stroke="#db2777" stroke-width="1.2"/>
+  <text x="856" y="398" text-anchor="middle" font-size="10" font-weight="bold" fill="#831843">Bias Audit Loop</text>
+  <text x="856" y="412" text-anchor="middle" font-size="8.5" fill="#9d174d">Regional + subgroup parity</text>
+  <text x="856" y="424" text-anchor="middle" font-size="8.5" fill="#9d174d">Flag → remediate → re-audit</text>
+
+  <!-- Horizontal flow arrows between stages (top level) -->
+  <line x1="188" y1="200" x2="202" y2="200" stroke="#374151" stroke-width="2" marker-end="url(#arx)"/>
+  <line x1="372" y1="200" x2="386" y2="200" stroke="#374151" stroke-width="2" marker-end="url(#arx)"/>
+  <line x1="572" y1="200" x2="586" y2="200" stroke="#374151" stroke-width="2" marker-end="url(#arx)"/>
+  <line x1="756" y1="200" x2="770" y2="200" stroke="#374151" stroke-width="2" marker-end="url(#arx)"/>
+
+  <!-- Bottom feedback arc -->
+  <path d="M 856 502 Q 856 540 480 540 Q 104 540 104 502" fill="none" stroke="#db2777" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arFB)"/>
+  <text x="480" y="556" text-anchor="middle" font-size="10" fill="#9d174d" font-weight="bold">← closed-loop feedback: model drift triggers retraining cycle →</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arx" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#374151"/>
+    </marker>
+    <marker id="arFB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#db2777"/>
+    </marker>
+  </defs>
+</svg>
