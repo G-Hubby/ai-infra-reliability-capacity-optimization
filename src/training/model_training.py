@@ -1,7 +1,7 @@
 """
 model_training.py
 =================
-CSE599 – Computer Systems and Engineering Capstone
+AI Infrastructure Reliability & Capacity Optimization
 AI Infrastructure Reliability & Capacity Optimization
 California Science and Technology University (CSTU), August 2026
 Author: Subhashish Mitra
