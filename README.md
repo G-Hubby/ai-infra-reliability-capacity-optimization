@@ -18,7 +18,7 @@ This project delivers an end-to-end **AI Infrastructure Reliability & Capacity O
 
 The platform spans a four-tier architecture: raw telemetry ingestion → ML feature engineering + model inference → agentic mitigation workflow → closed-loop fabric feedback. A natural-language AI Assistant routes operator queries through a policy-aware inference engine to automated action executors, completing the reliability loop through a mandatory **Human-in-the-Loop (HITL)** approval gate before any network-state change is executed.
 
-📄 **[Full Project Report (PDF)](report/CSE599%20-%20AI%20Infrastructure%20Reliability%20%26%20Capacity%20Optimization.pdf)**
+📄 **[Full Project Report (PDF)](https://github.com/G-Hubby/ai-infra-reliability-capacity-optimization/blob/main/CSE599%20-%20AI%20Infrastructure%20Reliability%20%26%20Capacity%20Optimization.pdf)**
 
 ---
 
